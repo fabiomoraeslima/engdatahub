@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EngData Hub - Documentação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.min.css">
+    <style>
+        :root {
+            --bg-color: #F6F0E8;
+            --card-bg: #FFFFFF;
+            --card-border: #C8A165;
+            --text-color: #4A2C2A;
+            --accent-color: #C8A165;
+            --shadow-color: rgba(74, 44, 42, 0.1);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            margin: 0;
+        }
+
+        .markdown-body {
+            max-width: 980px;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            border: 2px solid var(--card-border);
+            box-shadow: 0 4px 20px var(--shadow-color);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--text-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 4px;
+        }
+
+        a {
+            color: var(--accent-color);
+        }
+
+        blockquote {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 1em;
+            color: var(--text-color);
+            background-color: #FAF6F0;
+        }
+
+        code {
+            background-color: #EFE6DD;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--text-color);
+        }
+
+        pre {
+            background-color: #EFE6DD;
+            padding: 12px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid var(--accent-color);
+            margin: 24px 0;
+        }
+    </style>
+</head>
+<body>
+
+<article class="markdown-body" id="content">
+Carregando...
+</article>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+    const markdown = `
+# EngData Hub
+
+## 📚 Descrição
+
+**EngData Hub** é um espaço colaborativo criado para centralizar, organizar e compartilhar conhecimento técnico dentro do time de Engenharia de Dados.
+
+Aqui você encontra vídeos, tutoriais, boas práticas, e conteúdos que fortalecem nosso desenvolvimento profissional e impulsionam a eficiência dos nossos projetos.
+
+Nosso objetivo é transformar aprendizado individual em crescimento coletivo, facilitando o acesso a informações relevantes, promovendo a troca de experiências e acelerando a evolução técnica do time.
+
+---
+
+## 💡 Por que "EngData Hub"?
+
+### ✔️ **EngData**
+- **"Eng"** representa **Engenharia**, uma abreviação comum em tecnologia (como em Engenharia de Dados ou Engenharia de Software).
+- **"Data"** refere-se diretamente aos **dados**, que são o centro da nossa atuação.
+
+Juntos, **"EngData"** deixa claro que este é um ambiente voltado para profissionais de **Engenharia de Dados**.
+
+### ✔️ **Hub**
+- **"Hub"** significa **centro, ponto de encontro ou conector**.
+- É uma palavra frequentemente usada na tecnologia para representar ambientes centralizados de informação, redes ou colaboração.
+
+### 🔗 **Resumo do nome:**
+> **EngData Hub** é o nosso **centro de conhecimento em Engenharia de Dados**, onde o time se conecta para compartilhar, aprender e crescer juntos.
+
+---
+
+## 🚀 Objetivo
+
+Criar uma cultura de compartilhamento de conhecimento dentro do time, facilitando o acesso a materiais educativos, experiências e boas práticas, fortalecendo nosso desenvolvimento profissional contínuo.
+    `;
+
+    document.getElementById('content').innerHTML = marked.parse(markdown);
+</script>
+
+</body>
+</html>
